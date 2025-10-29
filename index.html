@@ -551,6 +551,20 @@
             color: var(--dark);
         }
 
+        .sidebar-item[data-section="chat-online"] a {
+            color: var(--light);
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: all 0.3s;
+            text-align: left;
+        }
+         .sidebar-item[data-section="chat-online"] a:hover,
+         .sidebar-item[data-section="chat-online"] a.active {
+            background-color: var(--accent);
+            color: var(--dark);
+        }
+
         /* Responsividade */
         @media (max-width: 768px) {
             .container {
@@ -653,6 +667,12 @@
     <a href="https://psicoapoiooficial.github.io/term-metroemocional/" class="nav-link" target="_blank" rel="noopener noreferrer">
         <i class="fas fa-thermometer-half"></i>
         <span>Termômetro Emocional</span>
+    </a>
+</div>
+            <div class="sidebar-item" data-section="chat-online">
+    <a href="https://basenova-b742f.firebaseapp.com/index.html" class="nav-link" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-comments"></i>
+        <span>Chat</span>
     </a>
 </div>
         </div>
