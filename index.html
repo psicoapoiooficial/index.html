@@ -537,6 +537,20 @@
             color: var(--dark);
         }
 
+         .sidebar-item[data-section="termometro-emocional"] a {
+            color: var(--light);
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: all 0.3s;
+            text-align: left;
+        }
+        .sidebar-item[data-section="termometro-emocional"] a:hover,
+         .sidebar-item[data-section="termometro-emocional"] a.active {
+            background-color: var(--accent);
+            color: var(--dark);
+        }
+
         /* Responsividade */
         @media (max-width: 768px) {
             .container {
@@ -633,6 +647,12 @@
     <a href="https://psicoapoiooficial.github.io/minigame/" class="nav-link" target="_blank" rel="noopener noreferrer">
         <i class="fas fa-puzzle-piece"></i>
         <span>Psico Game</span>
+    </a>
+</div>
+            <div class="sidebar-item" data-section="termometro-emocional">
+    <a href="https://psicoapoiooficial.github.io/term-metroemocional/" class="nav-link" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-thermometer-half"></i>
+        <span>Termômetro Emocional</span>
     </a>
 </div>
         </div>
